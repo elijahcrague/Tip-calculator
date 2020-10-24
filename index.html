@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<title>Tip Calculator</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Trispace:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+        <h1>Tip Calculator</h1>
+    <form action="javascript:void(calc())">
+        Amount: $<input id="bill" type="text"><br>
+        Tip:<span></span>
+        <select id="tip">
+            <option value=".05">5%</option>
+            <option value=".10">10%</option>
+            <option value=".15">15%</option>
+            <option value=".20">20%</option>
+            <option value=".25">25%</option>
+            <option value=".30">30%</option>
+        </select><br>
+        Amount of People:<span></span>
+        <input type="text" id="amtOfPeople">
+        <br>
+        <input id="calcButton" type="submit" value="Calculate">
+        <br>
+        Total: <span id="total"></span>
+    </form>
+</div>
+<script src="main.js"></script>
+</body>
